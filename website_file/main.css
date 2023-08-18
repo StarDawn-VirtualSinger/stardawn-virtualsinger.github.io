@@ -1,0 +1,16 @@
+/* 用户界面 */
+
+.padding-place{
+    /* 向上添加一个30px间距 */
+    padding-top: 30px;
+}
+
+/* 组件 */
+
+.headimg{
+    /* 圆形头像框 50x50 */
+    border-radius: 70px;
+    width:70px;
+    height:70px;
+}
+
