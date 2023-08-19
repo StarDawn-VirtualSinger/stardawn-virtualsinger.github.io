@@ -1,125 +1,143 @@
-<!DOCTYPE html>
-<html lang="zh">
-<!--主页-->
 <head>
     <meta charset="UTF-8">
-    <title>启明星晓StarDawn官方网站</title>
-    <meta content="width=device-width, initial-scale=1" name="viewport">
-    <!--引用Bootstrap库-->
-    <link href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.staticfile.org/popper.js/2.9.3/umd/popper.min.js"></script>
-    <script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.min.js"></script>
-    <!--引用JS与CSS-->
-    <link href="website_file/main.css" rel="stylesheet">
-    <script src="website_file/main.js"></script>
-    <!--加载favicon.ico-->
-    <link href="favicon.ico" rel="shortcut icon">
-    <!--complete-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords"
+        content="Python, C++, Windows, Linux, PyQt, html, css, 博客, blog, 代码, 原神, MC, Minecraft, 我的世界, 服务器, 生电, 建筑, RA, RedstoneArt Server, Bilibili, 哔哩哔哩">
+    <link rel="icon" href="/favicon.ico">
+    <script src="https://jsdelivrcdn.suswhw.top/npm/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://jsdelivrcdn.suswhw.top/npm/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://jsdelivrcdn.suswhw.top/npm/jquery/dist/jquery.min.js"></script>
+    <script src="https://jsdelivrcdn.suswhw.top/npm/vue/dist/vue.global.js"></script>
+    <script
+        src="https://jsdelivrcdn.suswhw.top/npm/bootstrap-autohidingnavbar/dist/jquery.bootstrap-autohidingnavbar.min.js"></script>
+    <script src="https://jsdelivrcdn.suswhw.top/npm/typed.js@2.0.12"></script>
+    <script type="text/javascript"
+        src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.10/jquery.lazy.min.js"></script>
+    <script type="text/javascript"
+        src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.10/jquery.lazy.plugins.min.js"></script>
+    <script src="https://jsdelivrcdn.suswhw.top/npm/vuetify/dist/vuetify.min.js"></script>
+    <link href="https://jsdelivrcdn.suswhw.top/npm/vuetify/dist/vuetify.min.css" rel="stylesheet">
+    <script src="https://jsdelivrcdn.suswhw.top/npm/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="https://jsdelivrcdn.suswhw.top/npm/masonry-layout/dist/masonry.pkgd.min.js"></script>
+    <link href="/css/main.css" rel="stylesheet">
+    <script>
+        $(function ($) {
+            $("img.lazy").Lazy();
+        });
+    </script>
+    <title>启明星晓StarDawn</title>
 </head>
-<body>
-<main>
-    <div align="center" class="alert alert-success alert-dismissible fade show">
-        <strong>欢迎！</strong>网站处于制作阶段，<a
-            href="https://github.com/StarDawn-VirtualSinger/stardawn-virtualsinger.github.io">官网Github仓库点我前往</a>&nbsp;&nbsp;暂时托管于Github
-        Pages，欢迎捐赠～
-        <button class="btn-close" data-bs-dismiss="alert" type="button"></button>
-    </div>
-    <div class="container">
-        <!--创建一个响应式布局-->
-        <!--创建一个导航栏-->
-        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-            <a class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none" href="#">
-                <span class="fs-4"><img alt="LOGO" height="50.66" src="website_file/logo_text.png" width="125"></span>
-            </a>
-            <ul class="nav nav-pills">
-                <li class="nav-item"><a aria-current="page" class="nav-link" href="#">主页</a></li>
-                <li class="nav-item"><a class="nav-link"
-                                        href="https://github.com/StarDawn-VirtualSinger/">Github组织</a></li>
-                <li class="nav-item"><a class="nav-link" href="https://pd.qq.com/s/8bzisyb61">QQ频道</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">论坛（建设中）</a></li>
-                <li class="nav-item"><a class="nav-link" href="#friend">友情链接</a></li>
-                <li class="nav-item"><a class="nav-link active" href="https://download.stardawn.xyz/">下载站</a></li>
-            </ul>
-        </header>
-        <!--complete-->
 
-        <!--写一个好看的首页介绍-->
-        <div class="padding-place">
-            <div align="center" class="mx-auto flex-column">
-                <h1 class="cover-heading">欢迎来到启明星晓StarDawn官方网站</h1>
-                <p class="lead">启明星晓 StarDawn
-                    是一个全新的公益性虚拟歌手企划，旗下共有三位歌手：凝希、凝星、凝楚。我们希望三姐妹像启明星一样为虚拟歌手界的拂晓添上三点星光，为ai歌声合成的推广添上一缕希望</p>
-                <br>
+<body>
+    <nav class="navbar navbar-expand-md bg-light navbar-light fixed-top navbar-fixed-top" id="mainNav"
+        data-bs-theme="dark">
+        <img decoding="async" src="/favicon.ico" alt="Logo" style="margin-left: 50px; width: 35px;">
+        <a class="navbar-brand ms-2 hvr-grow-shadow ra-title" href="/" style="color: #50505c;">启明星晓StarDawn</a>
+        <button class="navbar-toggler mx-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end me-4 ra-link" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item ms-2 hvr-grow-shadow">
+                    <a class="nav-link" href="#">首页</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <script>
+        $("nav.navbar.navbar-fixed-top").autoHidingNavbar();
+    </script>
+    <div id="content" data-v-app>
+        <div style="margin-bottom: 30px;"></div>
+        <div class="ra-figure-container" id="ra-figure">
+            <div class="ra-figure">
+                <figcaption>
+                    <h1 style="font-weight: bolder; color: #50505c;">
+                        <div id="typed-strings-1">
+                            <span>欢迎来到 <br>启明星晓StarDawn</span>
+                        </div>
+                        <span id="typed-1" class="typed-1"></span>
+                        <script>
+                            var typed = new Typed('#typed-1', {
+                                stringsElement: '#typed-strings-1',
+                                typeSpeed: 100,
+                                backSpeed: 30,
+                                showCursor: true,
+                                cursorChar: '_',
+                            });
+                        </script>
+                    </h1>
+                    <div class="about">
+                        <i>启明星晓 StarDawn
+                            是一个公益性的虚拟歌手企划，旗下共有三位歌手：凝希、凝星、凝楚。我们希望她们像启明星，为虚拟歌手界的拂晓添上三点星光，为ai歌声合成的推广添上一缕微芒</i>
+                    </div>
+                </figcaption>
             </div>
-            <div align="center" class="container mt-5">
-                <div class="row">
-                    <div class="col-sm-4">
-                        <img class="headimg" src="website_file/example.png"/>
-                        <br><br>
+        </div>
+    </div>
+    <p type="space">&nbsp;</p>
+    <div class="singers">
+        <div align="center" class="container mt-5">
+            <div class="row">
+                <div class="col-sm-4 hvr-grow-shadow">
+                    <div class="singers-content">
+                        <img class="headimg" src="/img/Ningxi.png">
+                        <br>
+                        <br>
                         <h3>启明星晓·凝希</h3>
-                        <span class="badge rounded-pill bg-secondary">音色偏女</span>
-                        <span class="badge rounded-pill bg-secondary">数据集质量：高</span>
+                        <span class="badge rounded-pill bg-secondary">音色柔和</span>
+                        <span class="badge rounded-pill bg-secondary">数据质量高</span>
                         <br><br>
-                        <p>等人来写介绍<br><b>CV:Dorothy</b></p>
-                        <a href="#">
-                            <button class="btn btn-primary" type="button">
-                                前往Github仓库 <span class="badge bg-danger">Step：320K</span>
-                            </button>
-                        </a>
-                    </div>
-                    <div class="col-sm-4">
-                        <img class="headimg" src="website_file/example.png"/>
-                        <br><br>
-                        <h3>启明星晓·凝星</h3>
-                        <span class="badge rounded-pill bg-secondary">音色偏男</span>
-                        <br><br>
-                        <p>等人来写介绍</p>
-                        <a href="#">
-                            <button class="btn btn-primary" type="button">
-                                敬请期待 <span class="badge bg-danger">预计10月份开始</span>
-                            </button>
-                        </a>
-                    </div>
-                    <div class="col-sm-4">
-                        <img class="headimg" src="website_file/example.png"/>
-                        <br><br>
-                        <h3>启明星晓·凝楚</h3>
-                        <span class="badge rounded-pill bg-secondary">音色偏中性</span>
-                        <br><br>
-                        <p>等人来写介绍</p>
-                        <a href="#">
-                            <button class="btn btn-primary" type="button">
-                                敬请期待 <span class="badge bg-danger">预计10月份开始</span>
+                        <p>三姐妹中最小的妹妹，善良开朗，声音温柔可人
+                            <br>
+                            <b>CV:Dorothy</b>
+                        </p>
+                        <a href="https://huggingface.co/Q78KG/Ningxi-for-Diffinger-OpenUtau-package">
+                            <button>
+                                前往Huggingface仓库 <span class="badge bg-secondary">Step：320K</span>
                             </button>
                         </a>
                     </div>
                 </div>
-            </div>
-            <!--complete-->
-            <!--新闻中心两栏-->
-            <div class="padding-place" align="center">
-                <br><br>
-                <div class="row">
-                    <div class="col-sm-6 p-3">
-                        <h4>新闻中心</h4>
-                        <h6>走过路过千万不要错过</h6>
+                <div class="col-sm-4 hvr-grow-shadow">
+                    <div class="singers-content">
+                        <img class="headimg" src="/favicon.ico">
+                        <br><br>
+                        <h3>启明星晓·凝星</h3>
+                        <span class="badge rounded-pill bg-secondary">敬请期待</span>
                         <br>
-                        <ul>
-                            <a href="https://www.bilibili.com/video/BV17s4y117Tz">这篇新闻写了吗？如写 —— 2023.1.1 8:00</a>
-                        </ul>
+                        <br>
+                        <p>敬请期待
+                            <br>
+                            <b>CV:敬请期待</b>
+                        </p>
+                        <a href="#">
+                            <button>
+                                敬请期待 <span class="badge bg-secondary">预计10月份开始</span>
+                            </button>
+                        </a>
                     </div>
-                    <div class="col-sm-6 p-3">
-                        <h4>这写点什么好呢？</h4>
-                        <h6>如写</h6>
-                        <br>
-
+                </div>
+                <div class="col-sm-4 hvr-grow-shadow">
+                    <div class="singers-content">
+                        <img class="headimg" src="/favicon.ico">
+                        <br><br>
+                        <h3>启明星晓·凝楚</h3>
+                        <span class="badge rounded-pill bg-secondary">敬请期待</span>
+                        <br><br>
+                        <p>敬请期待
+                            <br>
+                            <b>CV:敬请期待</b>
+                        </p>
+                        <a href="#">
+                            <button>
+                                敬请期待 <span class="badge bg-secondary">预计10月份开始</span>
+                            </button>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!--complete-->
-    </div>
-</main>
 </body>
-</html>

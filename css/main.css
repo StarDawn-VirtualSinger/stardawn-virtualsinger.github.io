@@ -1,0 +1,45 @@
+@import url(/css/layout/hover.main.css);
+@import url(/css/layout/figure-with-swiper.main.css);
+@import url(/css/layout/pages.main.css);
+@import url(/css/layout/typed.css);
+
+body {
+    color: #f8f9fa;
+    text-align: center;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.a {
+    font-family: "SimSun";
+}
+
+.ra-link {
+    padding-right: 50px;
+}
+
+.info-container {
+    background-color: rgb(36, 41, 46);
+}
+
+.ra-title {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.button-subtitle {
+    margin-top: 15px;
+    margin-left: 4px;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 3px;
+}
+
+.title {
+    padding-top: 30px;
+    /* font-family: "SimSun"; */
+}
