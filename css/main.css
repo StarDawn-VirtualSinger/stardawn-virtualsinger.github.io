@@ -4,7 +4,7 @@
 @import url(/css/layout/typed.css);
 
 body {
-    color: #f8f9fa;
+    background-color: #50505c;
     text-align: center;
     scrollbar-width: none;
     -ms-overflow-style: none;
@@ -43,3 +43,4 @@ body::-webkit-scrollbar {
     padding-top: 30px;
     /* font-family: "SimSun"; */
 }
+
